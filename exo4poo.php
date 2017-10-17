@@ -12,15 +12,16 @@ class form
 
 // faire une methode qui concatene
 
-  public function setTexte($name,$firstName)
+  public function setTexte($name,$firstName,)
   {
-    $this->form .= '<input name="' . $name . '" type="texte" > '.' <br/>  '.'<input firstName="' . $firstName .'" type="texte" >'.' <br/>  ';
+    $this->form .= '<input name="' . $name . '" type="texte" . "value=" '. $value . '"> '.' <br/>  '.'<input firstName="' . $firstName .'" type="texte". "value=" '. $value . '">  >'.' <br/>  ';
   }
 
   public function setSubmit($submit)
   {
     $this->form.='<input submit="'. $submit . '" type="submit" >' .' </form >';
   }
+
 
   function getForm(){
 
@@ -32,7 +33,7 @@ class form
 
 // faire un require et mettre dans index.php
 $form = new Form("index.php","post");
-$form->setTexte('toto','tata');
+$form->setTexte('qsdfsd','wvvc');
 $form->setSubmit('envoyer');
 echo $form->getForm();
 // var_dump($form);
