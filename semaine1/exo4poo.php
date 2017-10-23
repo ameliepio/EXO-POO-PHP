@@ -12,7 +12,7 @@ class form
 
 // faire une methode qui concatene
 
-  public function setTexte($name,$firstName,)
+  public function setTexte($name,$firstName)
   {
     $this->form .= '<input name="' . $name . '" type="texte" . "value=" '. $value . '"> '.' <br/>  '.'<input firstName="' . $firstName .'" type="texte". "value=" '. $value . '">  >'.' <br/>  ';
   }
